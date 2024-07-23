@@ -17,12 +17,10 @@ public class SelenideTest {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        options.addArguments("--no-sandbox"); // Bypass OS security model
-        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--start-maximized");
         options.addArguments("--ignore-certificate-errors");
-        options.addArguments("--no-sandbox");
-        options.setCapability("marionette", true);
         options.setAcceptInsecureCerts(false);
         options.addArguments("--remote-allow-origins=*");
 
