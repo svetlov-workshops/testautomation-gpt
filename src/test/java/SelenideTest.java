@@ -13,6 +13,7 @@ public class SelenideTest {
     @BeforeClass
     public static void setupClass() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.addArguments("--start-maximized");
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--no-sandbox");

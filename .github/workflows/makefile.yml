@@ -25,4 +25,4 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run specific test method
-        run: ./gradlew test --tests SelenideTest.testTitle
+        run: ./gradlew test --info --tests SelenideTest.testTitle
