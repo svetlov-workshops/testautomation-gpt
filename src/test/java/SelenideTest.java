@@ -2,16 +2,16 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class SelenideTest {
 
-    @BeforeClass
+    @BeforeAll
     public static void setupClass() {
         WebDriverManager.chromedriver().setup();
 
@@ -44,7 +44,7 @@ public class SelenideTest {
         }
     }
 
-    @AfterClass
+    @AfterAll
     public static void teardownClass() {
         WebDriverRunner.closeWebDriver();
     }
