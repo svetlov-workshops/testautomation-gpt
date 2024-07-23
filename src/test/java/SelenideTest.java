@@ -4,6 +4,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -28,6 +29,7 @@ public class SelenideTest {
     }
 
     @Test
+    @Tag("ui")
     public void testTitle() {
         open("https://termine.bonn.de/m/auslaenderamt/extern/calendar/?uid=163e5a5b-3edb-4de1-97c7-b4922526085f");
         //check visible checked checkbox
