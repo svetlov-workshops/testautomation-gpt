@@ -31,4 +31,4 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run specific test method
-        run: ./gradlew test --info --tests *ui*
+        run: ./gradlew test --info
